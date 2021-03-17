@@ -118,24 +118,43 @@
 
 /*inizio modifica*/
 .ex-10-icon {
-    -webkit-animation: rotation 2s infinite linear;
+    animation: rotation 2s infinite linear;
 }
 
-@-webkit-keyframes rotation {
+@keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
     }
     to {
-            -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
     }
 }
-
 /*fine modifica*/
 
 
 .ex-11-icon {
     font-size: 60px;
 }
+
+
+
+/*inizio modifica*/
+.ex-11-icon:hover {
+    animation: rotation-two 2s linear;
+}
+
+@keyframes rotation-two {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(249deg);
+    }
+}
+/*fine modifica*/
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -150,7 +169,7 @@
     text-decoration: none;
 }
 .ex-12-top-white, .ex-13-top-white {
-    position: absolute;
+    position: relative;
     top: -10px;
     left: 10%;
     background: #f5f5f5;
@@ -165,3 +184,19 @@
     width: 60px;
     height: 20px;
 }
+
+
+/*inizio modifica esercizio 12*/
+.ex-12-top-white {
+    animation-name: animazione-top-bottone-12;
+    transition: 6s;
+}
+
+@keyframes animazione-top-bottone-12 {
+    0%   {left:10%; top:-10px;}
+    25%  {left:49%; top:-10px;}
+    50%  {left:69%; top:-10px;}
+    75%  {left:39%; top:-10px;}
+    100% {left:10%; top:-10px;}
+  }
+/*fine modifica*/
