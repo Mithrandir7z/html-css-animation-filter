@@ -1,18 +1,45 @@
+/*inizio modifica*/
+/*fine modifica*/
+
 .ex-1-square {
     width: 100px;
     height: 100px;
     border: 1px solid red;
 }
+
+/*inizio modifica*/
+div.ex-1-square:hover {
+    background-color: red;
+    transition: 2s;
+}
+/*fine modifica*/
+
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+/*inizio modifica*/
+div.ex-2-square:active {
+    width: 100%;
+    transition: 4s;
+}
+/*fine modifica*/
+
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
 }
+
+/*inizio modifica*/
+div.ex-3-square:hover {
+    border-radius: 50%;
+    transition: 1s;
+}
+/*fine modifica*/
+
 .ex-4-square {
     width: 100px;
     height: 100px;
